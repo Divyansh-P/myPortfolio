@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+h1{
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 body{
    margin: 0%;
    padding: 0%;
@@ -369,6 +377,35 @@ initially starting from 0*/
         width: 0;
     }
 }
+@media screen and (max-width:811px) {
+  
+  #myCanvas{
+    visibility: hidden;
+  }
+  .home{
+    height: 100vh;
+  }
+  .infocontainer1{
+    margin-left: 6rem;
+    margin-top: 19.2rem;
+  }
+  .heading{
+    margin-left: 3rem;
+  }
+  .tabs{
+    display: flex;
+    flex-direction: column;
+  }
+  .pro{
+    width: 40rem;
+  }
+  .pr{
+    min-width: 15rem;
+  }
+  .ct{
+    margin-left: auto;
+  }
+}
 @media screen and (max-width:480px) {
  body,html{
    overflow-x: hidden;
@@ -486,34 +523,5 @@ initially starting from 0*/
   position: absolute;
   top: -1;
   
-  }
-}
-@media screen and (max-width:811px) {
-  
-  #myCanvas{
-    visibility: hidden;
-  }
-  .home{
-    height: 100vh;
-  }
-  .infocontainer1{
-    margin-left: 6rem;
-    margin-top: 19.2rem;
-  }
-  .heading{
-    margin-left: 3rem;
-  }
-  .tabs{
-    display: flex;
-    flex-direction: column;
-  }
-  .pro{
-    width: 40rem;
-  }
-  .pr{
-    min-width: 15rem;
-  }
-  .ct{
-    margin-left: auto;
   }
 }
