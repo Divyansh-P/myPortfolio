@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+body{
+   margin: 0%;
+   padding: 0%;
+   background: #121212;
+   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container{
+max-width: 100vw;
+}
+.poka{
+  height: 20px;
+  background-color: #121212;
+opacity: 0.8;
+background-image: radial-gradient(#c2eaf3 0.35000000000000003px, #121212 0.35000000000000003px);
+background-size: 7px 7px;
+}
+.about{
+  margin-bottom: 7rem;
+  margin-top: 5rem;
+}
+.me1{
+  height: 200px;
+  border-radius: 100px;
+}
+.project{
+  display: flex;
+  flex-direction: column;
+  margin-top:5rem;
+  margin-bottom: 5rem;
+}
+.pro{
+  align-self: center;
+  display: flex;
+  width: 70rem;
+  margin-top: 5rem;
+  flex-wrap: wrap;
+}
+.naam{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+ .p-1{
+  background-image: url('p1.png');
+  background-position: center;
+  background-size: cover;
+}
+.p-2{
+  background-image: url('p2.png');
+  background-position: center;
+  background-size: cover;
+}
+.p-3{
+  background-image: url('p3.png');
+  background-position: center;
+  background-size: cover;
+}
+.p-4{
+  background-image: url('p4.png');
+  background-position: center;
+  background-size: cover;
+}
+.pr{
+  flex: 1;
+  height: 20rem;
+  border: 2px solid blueviolet;
+  min-width: 30rem;
+  display: flex
+}
+.pr .info2{
+  display: none;
+  height: 20rem;
+}
+.pr:hover .info2{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+width: 100%;
+align-items: center;
+background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.808));
+}
+.link a{
+  text-decoration: none;
+  color: white;
+}
+.tech,.link{
+  font-family: 'Roboto', sans-serif;
+ color: white;
+ font-size: 1.5rem;
+}
+
+.heading{
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  width: 9rem;
+  font-size: 1.9rem;
+  margin-top: 2rem;
+  margin-left: 8rem;
+  border-bottom: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #00C853, #B2FF59);
+}
+.s-i{
+  width: 14rem;
+}
+.ct{
+  font-weight: normal;
+  font-size: 2rem;
+  width: 19rem;
+  margin: auto;
+  
+}
+.clink .fab{
+font-size: 2rem;
+}
+.clink{
+  margin-top: 5rem;
+  display: flex;
+  align-self: center;
+  width: 23rem;
+  justify-content: space-between;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+}
+.para3{
+  font-family: "Poppins", sans-serif;
+  width: 500px;
+  font-size: 1.1rem;
+  color: white;
+  line-height: 1.9rem;
+  font-weight: lighter;
+}
+.kachra{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+.i1{
+  height: 60px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+}
+.v1{
+  height: 60px;
+  top: 0;
+  right: 0;
+  position: absolute;
+  margin-left: 1rem;
+  margin-top: 1.5rem;
+}
+.fab{
+  color: white;
+  font-size: 20px;
+  transform: translateY(10px);
+}
+
+.cpp{
+  transform: translateY(10px);
+}
+.infocontainer1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 9rem;
+  margin-top: 12.2rem;
+}
+.icon{
+  display: flex;
+  justify-content: flex-start;
+  width: 400px;
+}
+
+#myCanvas {
+  background-color: #121212;
+  height: 100vh;
+  width: 100%;
+}
+.para1,.para2{
+  font-family: 'Roboto', sans-serif;
+margin-left: 15px;
+}
+.para1{
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 15px;
+}
+.para2{
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #AAFF00
+}
+.skills{
+  display: flex;
+  flex-direction: column;
+  margin-top:5rem;
+  margin-bottom:5rem;
+}
+.tabs{
+  align-self: center;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  margin-top: 5rem;
+  grid-row-gap: 3rem;
+}
+.tabs .progress-bar-container{
+  justify-self: center;
+}
+.resume{
+  margin-top: 60px;
+  margin-left: 11px;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  line-height: 3rem;
+  width: 9rem;
+  text-transform: uppercase;
+  white-space: normal;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 1.5rem;
+  color: #fff;
+  background-color: #1ED760;
+  height: 3rem;
+}
+.resume:hover{
+  transform: scale(1.04);
+  background-color: #21e065;
+}
+.text-container {
+  width: 26rem;
+  position: relative;
+  overflow: hidden;
+  height: 145px;
+  
+}
+.text-container video {
+  position: absolute;
+  top: 0;
+  width: 25rem;
+  height: 145px;
+  
+}
+.text-container svg {
+position: absolute;
+top: -1;
+
+}
+.pbar{
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+.per{
+width: 20px;
+transform: translateY(-8px);
+color: white;
+font-family: 'Roboto', sans-serif;
+}
+
+  .footer{
+    background:#121212;
+    height: 30px;
+    margin-top: 70px;
+    width: 100%;
+   text-align: center;
+   color: white;
+  
+  }
+  .progress-bar-container .he{
+    font-size: 1rem ;
+    margin-right: 10px;
+  }
+  .progress-bar-container{
+    background-color: #171717;
+    height:80px ;
+    width: 500px;
+    border-radius: 5px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 6px 2px 16px 0px rgba(44, 46, 48, 0.48) , -6px -2px 16px 0px rgba(0, 0, 0, 0.8);
+  }
+  .progress-bar-container{
+    margin-bottom: 50px;
+}
+
+/* Styling the h2 tag by giving color,
+letter spacing, font-size etc.*/
+.progress-bar-container h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eee;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+/* Styling the border and box
+effect of the progress bar*/
+.progress-bar {
+    width: 350px;
+    height: 5px;
+    border: 1px solid #565656;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(245, 159, 0);
+}
+
+/* Stylingthe background color of each
+animation and border radius */
+.percentage {
+    display: block;
+    height: 100%;
+    background-color: orange;
+    border-radius: 5px;
+    animation: progress 1500ms ease-in 1;
+}
+
+/* Assigning width of each languages*/
+.c {
+    width: 80%;
+}
+
+.react {
+    width: 70%;
+}
+
+.js {
+    width: 70%;
+}
+
+.html {
+    width: 90%;
+}
+
+.css {
+    width: 80%;
+}
+
+.ps {
+    width: 75%;
+}
+
+/* Animating the progress bar by
+initially starting from 0*/
+@keyframes progress {
+    from {
+        width: 0;
+    }
+}
+@media screen and (max-width:480px) {
+ body,html{
+   overflow-x: hidden;
+ }
+  .i1{
+    height: 40px;
+  }
+  #myCanvas{
+    visibility: hidden;
+  }
+  .heading{
+    align-self: center;
+    margin-left: 0%;
+  }
+  .ct{
+    margin: unset;
+  }
+  .infocontainer1{
+    margin-left: 0;
+    display: flex;
+    margin-top: 16rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .resume{
+    margin-left: 0;
+  }
+  .para1,.para2{
+    margin-left: 0;
+  }
+  .kachra{
+    flex-direction: column-reverse;
+    height: 70vh;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .para3{
+    width: 20rem;
+    text-align: center;
+  }
+  .me1{
+    height: auto;
+    width: 10rem;
+  }
+  .project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .s-i{
+    margin-left: 0px;
+  }
+  .pro{
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .pr{
+   min-width: unset;
+   width: 20rem;
+  }
+  .pr .info2{
+    height: 14rem;
+  }
+  .naam{
+    font-size: 1.5rem;
+  }
+  .tech,.link{
+    font-size: 1.2rem;
+  }
+  .myname{
+    width: 20rem;
+  }
+  .clink{
+    width: 15rem;
+  }
+  .tabs{
+    display: flex;
+    flex-direction: column;
+  }
+  .progress-bar-container{
+    width: 20rem;
+  }
+  .icon,.pbar{
+    width: 18rem;
+  }
+  .progress-bar{
+    width: 15rem;
+  }
+  .per{
+    width: 30px;
+  }
+  .text-container {
+    width: 21rem;
+    position: relative;
+    overflow: hidden;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+  .text-container video {
+    position: absolute;
+    top: 0;
+    width: 20rem;
+    height: 110px;
+    
+  }
+  .text-container svg {
+  position: absolute;
+  top: -1;
+  
+  }
+}
+@media screen and (max-width:811px) {
+  
+  #myCanvas{
+    visibility: hidden;
+  }
+  .home{
+    height: 100vh;
+  }
+  .infocontainer1{
+    margin-left: 6rem;
+    margin-top: 19.2rem;
+  }
+  .heading{
+    margin-left: 3rem;
+  }
+  .tabs{
+    display: flex;
+    flex-direction: column;
+  }
+  .pro{
+    width: 40rem;
+  }
+  .pr{
+    min-width: 15rem;
+  }
+  .ct{
+    margin-left: auto;
+  }
+}
