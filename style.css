@@ -42,16 +42,15 @@ background-size: 7px 7px;
 }
 .pro{
   align-self: center;
+  justify-content: center;
   display: flex;
+  flex-direction: column;
   width: 70rem;
   margin-top: 5rem;
-  flex-wrap: wrap;
 }
-.naam{
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bolder;
-  font-size: 2rem;
+.naami img{
+  height: 12rem;
+  width: 22rem;
 }
  .p-1{
   background-image: url('p6.png');
@@ -74,27 +73,43 @@ background-size: 7px 7px;
   background-size: cover;
 }
 .pr{
-  flex: 1;
-  height: 20rem;
-  border: 2px solid blueviolet;
-  min-width: 30rem;
-  display: flex
+  height: 12rem;
+  width: 55rem;
+  display: flex;
+  align-self: center;
+  margin-bottom: 5rem;
 }
 .pr .info2{
-  display: none;
-  height: 20rem;
+  display: flex;
 }
-.pr:hover .info2{
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
-width: 100%;
-align-items: center;
-background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.808));
+
+.techs{
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 4px 12px;
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  color: #0d6efd;
+  border-color: #0d6efd;
+  margin-right: 10px;
 }
-.link a{
+
+.link{
   text-decoration: none;
   color: white;
+}
+.desc{
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 1rem;
+  margin:2rem 0  ;
 }
 .tech,.link{
   font-family: 'Roboto', sans-serif;
@@ -126,7 +141,7 @@ background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.808));
   margin: auto;
   
 }
-.clink .fab{
+.clink .fa-brands,.fa-solid{
 font-size: 2rem;
 }
 .clink{
@@ -224,14 +239,33 @@ margin-left: 15px;
 .tabs{
   align-self: center;
   width: 80vw;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
+ display: flex;
   margin-top: 5rem;
-  grid-row-gap: 3rem;
+  justify-content: center;
 }
-.tabs .progress-bar-container{
-  justify-self: center;
+
+.skillissue{
+
+  width: 20rem;
 }
+
+.skillissue h1{
+
+font-size: 1.4rem;
+font-weight: 500;
+}
+
+.skillissue h1,li{
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.skillissue li{
+  font-weight: 100;
+  margin-bottom: 1rem;
+  font-size:0.9;
+}
+
 .resume{
   margin-top: 60px;
   margin-left: 11px;
@@ -276,17 +310,7 @@ position: absolute;
 top: -1;
 
 }
-.pbar{
-  display: flex;
-  justify-content: space-between;
-  width: 400px;
-}
-.per{
-width: 20px;
-transform: translateY(-8px);
-color: white;
-font-family: 'Roboto', sans-serif;
-}
+
 
   .footer{
     background:#121212;
@@ -297,86 +321,13 @@ font-family: 'Roboto', sans-serif;
    color: white;
   
   }
-  .progress-bar-container .he{
-    font-size: 1rem ;
-    margin-right: 10px;
-  }
-  .progress-bar-container{
-    background-color: #171717;
-    height:80px ;
-    width: 500px;
-    border-radius: 5px;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 6px 2px 16px 0px rgba(44, 46, 48, 0.48) , -6px -2px 16px 0px rgba(0, 0, 0, 0.8);
-  }
-  .progress-bar-container{
-    margin-bottom: 50px;
-}
 
-/* Styling the h2 tag by giving color,
-letter spacing, font-size etc.*/
-.progress-bar-container h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #eee;
-    letter-spacing: 1px;
-    font-size: 20px;
-}
 
-/* Styling the border and box
-effect of the progress bar*/
-.progress-bar {
-    width: 350px;
-    height: 5px;
-    border: 1px solid #565656;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgb(245, 159, 0);
-}
 
-/* Stylingthe background color of each
-animation and border radius */
-.percentage {
-    display: block;
-    height: 100%;
-    background-color: orange;
-    border-radius: 5px;
-    animation: progress 1500ms ease-in 1;
-}
 
-/* Assigning width of each languages*/
-.c {
-    width: 80%;
-}
 
-.react {
-    width: 70%;
-}
 
-.js {
-    width: 70%;
-}
 
-.html {
-    width: 90%;
-}
-
-.css {
-    width: 80%;
-}
-
-.ps {
-    width: 75%;
-}
-
-/* Animating the progress bar by
-initially starting from 0*/
-@keyframes progress {
-    from {
-        width: 0;
-    }
-}
 @media screen and (max-width:811px) {
   
   #myCanvas{
@@ -407,6 +358,16 @@ initially starting from 0*/
   }
 }
 @media screen and (max-width:480px) {
+
+  .skillissue{
+
+    margin-bottom: 5rem;
+  }
+
+.naami{
+  padding-left: 2rem;
+}
+
  body,html{
    overflow-x: hidden;
  }
@@ -463,16 +424,17 @@ initially starting from 0*/
   }
   .pro{
     flex-direction: column;
-    height: 100vh;
     justify-content: center;
     align-items: center;
+   
   }
   .pr{
    min-width: unset;
-   width: 20rem;
+   width: 100vw;
+   height: auto;
   }
   .pr .info2{
-    height: 14rem;
+    flex-direction: column;
   }
   .naam{
     font-size: 1.5rem;
